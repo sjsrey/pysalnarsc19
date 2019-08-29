@@ -15,7 +15,7 @@ This repository contains the materials and instructions for the PySAL workshop a
 * 8:00-10:00
   * Overview of PySAL and workshop
   * Introductions
-  * Installation
+  * Setup
   * Jupyter notebooks
   * Python primer
 * 10:00-10:30
@@ -39,7 +39,7 @@ This repository contains the materials and instructions for the PySAL workshop a
   
 ## Setup
 
-Participants are encouraged to use their own laptops in the workshop. Setting up a laptop for the workshop consists of two steps:
+Participants are encouraged to use their own laptops during the workshop. Setting up a laptop for the workshop consists of two steps:
 
 1. Obtaining the workshop materials
 2. Installing Python and required packages
@@ -59,14 +59,20 @@ If you are not using git, you can grab the workshop materials as a zip file by p
 
 ![download](https://i.imgur.com/BeiBZmB.png)
 
-Once you have downloaded the zip file, extract the archive to a working directory. 
+This will download the file `pysalworkshop-master.zip` to your downloads directory.  
+
+Once you have downloaded the zip file, extract the archive to a working directory of your choosing. The archive will expand into the directory `pysalworkshop-master`.  
 
 ### Software Installation
 
 We will be using a number of Python packages for geospatial analysis.
 
 
-An easy way to install all of these packages is to use a Python distribution such as [Anaconda](https://www.anaconda.com/download/#macos). In this workshop we will use anaconda to build an [environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) for **Python 3.6**. It does not matter which version of anaconda is downloaded. We recommend installing Anaconda 3.7.
+An easy way to install all of these packages is to use a Python distribution
+such as [Anaconda](https://www.anaconda.com/download/#macos). In this workshop
+we will use anaconda to build an
+[environment](https://conda.io/docs/user-guide/tasks/manage-environments.html)
+for **Python 3**. 
 
 - [Windows Anaconda installation instructions](https://docs.anaconda.com/anaconda/install/windows/#)
 - [macOS Annaconda installation instructions](https://docs.anaconda.com/anaconda/install/mac-os/#)
@@ -81,13 +87,19 @@ Having read the [Ananconda prompt](https://docs.anaconda.com/anaconda/user-guide
  navigate to the working directory where you extracted the archive in the
 *Obtaining Workshop Materials* section above.
 
-For example, you are on Windows and your user name is MyName, and you downloaded the archive to:
-`C:\Users\MyName\Downloads\pysalworkshop` 
+For example, if you are on Windows and your user name is `MyName`, and you extracted the archive to:
+`C:\Users\MyName\Downloads\pysalworkshop-master` 
 
-then at the Anacond prompt you would get there with:
+then at the Anaconda prompt you would get there with:
 
 ```bash
-cd C:\Users\MyName\Downloads\pysalworkshop`
+cd C:\Users\MyName\Downloads\pysalworkshop-master
+```
+
+Were you instead on macOS you would do:
+
+```bash
+cd /Users/MyName/Downloads/pysalworkshop-master
 ```
 
 Once there, create the workshop environment with:
@@ -131,7 +143,7 @@ You should also see a new file in the current directory called `inc.png` that co
 
 ![incmap](figs/readmefigs/inc.png)
 
-If you do see the above, you are ready for the tutorial. If not, please contact either of us for help.
+If you do see the above, you are ready for the tutorial. If not, please contact me at sjsrey@gmail.com
 
 ## Troubleshooting
 
