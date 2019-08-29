@@ -37,7 +37,14 @@ This repository contains the materials and instructions for the PySAL workshop a
   * Spatial dynamics
   * Spatial regression
   
-## Obtaining Workshop Materials
+## Setup
+
+Participants are encouraged to use their own laptops in the workshop. Setting up a laptop for the workshop consists of two steps:
+
+1. Obtaining the workshop materials
+2. Installing Python and required packages
+  
+### Obtaining Workshop Materials
 
 If you are familiar with GitHub, you should clone or fork this GitHub repository to a specific directory. Cloning can be done by:
 
@@ -45,43 +52,57 @@ If you are familiar with GitHub, you should clone or fork this GitHub repository
 git clone https://github.com/sjsrey/geocomputation19.git
 ```
 
-If you are not using git, you can grab the workshop materials as a zip file by pointing your browser to (https://github.com/sjsrey/geocomputation19.git) and clicking on the green *Clone or download* button in the upper right.
+If you are not using git, you can grab the workshop materials as a zip file by pointing your browser to (https://github.com/sjsrey/geocomputation19.git) and then:
 
-![download](figs/readmefigs/download.png)
+1. Click on the green *Clone or download* button in the upper right
+2. Select the `Download Zip` link
 
-Extract the downloaded zip file to a working directory.
+![download](https://i.imgur.com/BeiBZmB.png)
 
-## Installation
+Once you have downloaded the zip file, extract the archive to a working directory. 
+
+### Software Installation
 
 We will be using a number of Python packages for geospatial analysis.
 
 
 An easy way to install all of these packages is to use a Python distribution such as [Anaconda](https://www.anaconda.com/download/#macos). In this workshop we will use anaconda to build an [environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) for **Python 3.6**. It does not matter which version of anaconda is downloaded. We recommend installing Anaconda 3.7.
 
-![anaconda](figs/readmefigs/anaconda.png)
+- [Windows Anaconda installation instructions](https://docs.anaconda.com/anaconda/install/windows/#)
+- [macOS Annaconda installation instructions](https://docs.anaconda.com/anaconda/install/mac-os/#)
+- [Linux Anaconda installation instructions](https://docs.anaconda.com/anaconda/install/linux/#)
 
 
-On windows, all our work will begin from an anaconda prompt, which you can start as follows:
+Once you have installed Anaconda, you can explore the options for interacting with Python through Anaconda: [Getting started with Anaconda](https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-nav-win).
 
-![anacondaprompt](figs/readmefigs/anacondastartwin.png)
+All our work will begin from an [Anaconda prompt](https://docs.anaconda.com/anaconda/user-guide/getting-started/#write-a-python-program-using-anaconda-prompt-or-terminal).
 
-Start a terminal and navigate to the directory of the downloaded/ cloned materials. For example, if the materials now live in the directory ```/Users/weikang/Downloads/pysalnarsc18-master```, you need to navigate to that directory from the terminal (using command ```cd```):
+Having read the [Ananconda prompt](https://docs.anaconda.com/anaconda/user-guide/getting-started/#write-a-python-program-using-anaconda-prompt-or-terminal) instructions, start a prompt and
+ navigate to the working directory where you extracted the archive in the
+*Obtaining Workshop Materials* section above.
 
-![directory](figs/readmefigs/directory.png)
+For example, you are on Windows and your user name is MyName, and you downloaded the archive to:
+`C:\Users\MyName\Downloads\pysalworkshop` 
 
-Once we have done that, run:
+then at the Anacond prompt you would get there with:
+
+```bash
+cd C:\Users\MyName\Downloads\pysalworkshop`
+```
+
+Once there, create the workshop environment with:
 
 ```bash
 conda-env create -f pysalworkshop.yml
 ```
 
-This will build a conda python 3.6 environment that sandboxes the installation of the required packages for this workshop so we don't break anything in your computer's system Python (if it has one).
+This will build a conda python 3+ environment that sandboxes the installation of the required packages for this workshop so we don't break anything in your computer's system Python (if it has one).
 
 This may take 10-15 minutes to complete depending on the speed of your network connection.
 
-Once this completes, you can activate the workshop environment with:
+Once this completes, you can activate the workshop environment:
 
-* on Mac, Linux
+* on Mac, Linux:
 ```bash
 source activate pysalworkshop
 ```
