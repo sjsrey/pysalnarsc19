@@ -150,6 +150,8 @@ print(wb.pct_nonzero, wrook.pct_nonzero)
 
 ## Intersection weights
 
+We now have two weights objects that we can use to arrive at the desired neighbor graph. The rook weights object defines all TAZs that share an edge, including those pairs belonging to different counties. We want all of these pairs with the exception of the latter. The block weights define as neighbors all pairs of TAZs belonging to the same county. The intersection of these two weights objects will give us what we need:
+
 ```python
 wint = libpysal.weights.w_intersection(wb, wrook)
 ```
@@ -175,3 +177,14 @@ segs_plot.set_linewidth(0.20)
 ax.add_collection(segs_plot)
 ax.set_axis_off()
 ```
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-
+sa/4.0/"><img alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
+xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Spatial Weights: Case Study</span> by <a xmlns:cc="http://creativecommons.org/ns#"
+href="http://sergerey.org" property="cc:attributionName"
+rel="cc:attributionURL">Serge Rey</a> is licensed under a <a
+rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

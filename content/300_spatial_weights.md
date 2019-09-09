@@ -161,7 +161,11 @@ df.assign(weights = qW.sparse[100,:].toarray().flatten()).plot('weights', cmap='
 By default, PySAL assigns each observation an index according to the order in which the observation was read in. This means that, by default, all of the observations in the weights object are indexed by table order.
 
 ```python
-pandas.Series(qW.cardinalities).plot.hist()
+pandas.Series(qW.cardinalities).plot.hist(bins=9)
+```
+
+```python
+qW.cardinalities.values()
 ```
 
 #### Rook Weights
@@ -192,7 +196,7 @@ df.assign(weights = rW.sparse[100,:].toarray().flatten()).plot('weights', cmap='
 ```
 
 ```python
-pandas.Series(rW.cardinalities).plot.hist()
+pandas.Series(rW.cardinalities).plot.hist(bins=9)
 ```
 
 #### Bishop Weights
@@ -309,8 +313,24 @@ knn4_bad.neighbors == knn4.neighbors
 ```python
 
 df.assign(weights = 
-          knn4_bad.sparse[100,:].toarray().flatten()).plot('weights', 
+          knn4_bad.sparse[0,:].toarray().flatten()).plot('weights', 
                                                            cmap='plasma')
+```
+
+```python
+
+df.assign(weights = 
+          knn4.sparse[0,:].toarray().flatten()).plot('weights', 
+                                                           cmap='plasma')
+```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+Enumerate the counties for which ignoring curvature results in an incorrect neighbor set for knn.
+</div>
+
+```python
+# %load solutions/300_1.py
 ```
 
 ### Kernel W
@@ -447,72 +467,40 @@ rW.plot(df)
 qW.plot(df)
 ```
 
-## Exercise
-
-1. Answer this question before writing any code: What spatial weights structure would be more dense, Texas counties based on rook contiguity or Texas counties based on knn with k=4?
-2. Why?
-3. Write code to see if you are correct.
-
-```python
-
-```
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+    Which spatial weights structure would be more dense, Texas counties based on rook contiguity or Texas counties based on knn with k=4?
+</div>
 
 ```python
-
+# %load solutions/300_2.py
 ```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+    Which counties have fewer neighbors under rook contiguity relative to knn4?
+</div>
 
 ```python
-
+# %load solutions/300_3.py
 ```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+    Which counties have identicical neighbors under queen contiguity and queen rook contiguity?
+</div>
 
 ```python
-
+# %load solutions/300_4.py
 ```
 
-```python
+---
 
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-## Solution
-
-```python
-from libpysal.weights import Rook, KNN
-wrk = Rook.from_shapefile("data/texas.shp")
-```
-
-```python
-wrk.pct_nonzero
-```
-
-```python
-wk4 = KNN.from_shapefile("data/texas.shp", k=4)
-wk4.pct_nonzero
-```
-
-```python
-
-```
-
-```python
-
-```
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-
+sa/4.0/"><img alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
+xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Spatial Weights</span> by <a xmlns:cc="http://creativecommons.org/ns#"
+href="http://sergerey.org" property="cc:attributionName"
+rel="cc:attributionURL">Serge Rey</a> is licensed under a <a
+rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

@@ -198,3 +198,54 @@ df.assign(cl=labels).plot(column='cl', categorical=True, \
 ax.set_axis_off()
 plt.show()
 ```
+
+## Putting it all together
+
+```python
+from pysal.explore import esda
+from pysal.viz.splot import esda as esdaplot
+```
+
+```python
+lisa = esda.Moran_Local(df["median_pri"], wq)
+```
+
+```python
+esdaplot.lisa_cluster(lisa, df);
+```
+
+```python
+esdaplot.plot_local_autocorrelation(lisa, df, "median_pri");
+```
+
+## P-values revisited
+
+```python
+lisa = esda.Moran_Local(df["median_pri"], wq)
+```
+
+```python
+f, axs = plt.subplots(1, 3, figsize=(16, 3))
+for i, ax in zip([0.05, 0.01, 0.001], axs):
+    esdaplot.lisa_cluster(lisa, df, p=i, ax=ax)
+    ax.set_title(f"Significance level = {i}")
+```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+Repeat the local analysis using rook contiguity and knn4. How do the results compare across different spatial weights?</div>
+
+```python
+# %load solutions/320_1.py
+```
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-
+sa/4.0/"><img alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
+xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Local Spatial Autocorrelation</span> by <a xmlns:cc="http://creativecommons.org/ns#"
+href="http://sergerey.org" property="cc:attributionName"
+rel="cc:attributionURL">Serge Rey</a> is licensed under a <a
+rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
