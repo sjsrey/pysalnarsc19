@@ -44,7 +44,7 @@ import shapely.geometry as geom
 df = gpd.read_file('data/neighborhoods.gpkg')
 listings = gpd.read_file('data/listings.gpkg')
 listings['price'] = listings.price.str.replace('$', '').str.replace(',','_').astype(float)
-# was created in previous notebook with df.to_file('data/neighborhoods.gpkg')
+
 ```
 
 ```python
@@ -359,8 +359,7 @@ plt.xlabel("Moran's I")
 
 ```
 
-Here our observed value is again in the upper tail, although visually it does
-not look as extreme relative to the binary case. Yet, it is still statistically significant:
+Here our observed value is again in the upper tail, and is more extreme than in the case of the binary data.
 
 ```python
 mi.p_sim
@@ -371,8 +370,4 @@ We will save our derived variables in a  file for use in later notebooks:
 
 ```python
 df.to_file("data/airbnb.shp")
-```
-
-```python
-
 ```

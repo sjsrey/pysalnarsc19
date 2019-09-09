@@ -43,10 +43,6 @@ print('hi world!')
 ```
 
 ```python
-print('hi world')
-```
-
-```python
 2+3
 ```
 
@@ -104,7 +100,7 @@ print(keyword.kwlist)
 ```
 
 ```python
-7/4.
+7//4
 ```
 
 ```python
@@ -114,6 +110,8 @@ int(7/4.)
 ```python
 round(7/4.)
 ```
+
+## Strings
 
 ```python
 s = "A string of words"
@@ -250,16 +248,21 @@ s[2] = "S"
 ```python
 first = "Bilbo"
 last = "Baggins"
-line = "The protoagonist is named %s %s." % (first, last)
+line = "The protoagonist is named {} {}.".format(first, last)
 print(line)
 ```
 
 ```python
 R2 = 0.943
-summary = "The model had and R2 value of %1.2f." % R2
-```
-
-```python
+R2a = 0.833
+summary = "The model had an R2 value of {:1.2f}.".format(R2)
+print(summary)
+summary = "The model had an R2 value of {0:1.2f}, and an adjusted R2 of {1:1.3f}.".format(R2, R2a)
+print(summary)
+summary = "The model had an adjusted R2 value of {r2a:1.2f}, and an R2 of {r2:1.3f}.".format(r2=R2, r2a=R2a)
+print(summary)
+results = {'r2a': R2a, 'r2': R2}
+summary = "The model had an adjusted R2 value of {r2a:1.2f}, and an R2 of {r2:1.3f}.".format(**results)
 print(summary)
 ```
 

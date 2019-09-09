@@ -20,9 +20,9 @@ from pysal.explore.esda.moran import Moran
 import pysal.lib.weights.set_operations as Wsets
 from pysal.lib.weights import Queen, KNN
 from booktools import choropleth
-import seaborn 
+import seaborn
 import pandas
-import geopandas 
+import geopandas
 import numpy
 from sklearn.cluster import KMeans, AgglomerativeClustering
 import matplotlib.pyplot as plt
@@ -951,9 +951,6 @@ While the size of the largest region is:
 ```python
 thresh.max()
 ```
-50265 when state=0
-
-
 ```python
 db1['tracts'] = numpy.ones(db1.shape[0],)
 counts = db1[['Total Popu', 'maxp_15000','tracts']].groupby(by='maxp_15000').count()

@@ -190,13 +190,3 @@ db.HR90.plot.hist(alpha=0.5)
 # color and transparency
 db.HR90.plot.hist(alpha=0.5, color='green')
 ```
-
-## Exercises
-
-
-* Create a scatter plot using `seaborn`'s `jointplot` (hint: have a look at the `seaborn`'s tutorial for [plotting bivariate distributions](http://seaborn.pydata.org/tutorial/distributions.html#plotting-bivariate-distributions)) 
-* Replicate the Boxplot using the `boxen` option for a cooler alternative
-* Create a figure with three subplots displaying the following:
-    - Histogram of the `HR90`
-    - Scatter plot of `HR90` against `GI89`
-    - KDE of the `GI89`

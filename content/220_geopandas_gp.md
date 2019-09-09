@@ -16,8 +16,6 @@ jupyter:
 Geoprocessing with GeoPandas
 ============================
 
-[Serge Rey](http://sergerey.org)
-
 We continue exploring geopandas and more of its geoprocessing
 capabilities. In this notebook we assume the role of a social scientist
 who is interested in the topic of environmental equity. They are broadly
@@ -893,7 +891,3 @@ href="http://sergerey.org" property="cc:attributionName"
 rel="cc:attributionURL">Serge Rey</a> is licensed under a <a
 rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-```python
-
-```

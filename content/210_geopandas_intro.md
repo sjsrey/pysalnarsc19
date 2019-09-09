@@ -16,8 +16,6 @@ jupyter:
 Introduction to GeoPandas
 =========================
 
-[Serge Rey](http://sergerey.org)
-
 The second library in the Python geospatial stack that we examine is
 [GeoPandas](http://geopandas.org/). GeoPandas builds on the capabilities
 of Shapely and combines these with the popular
@@ -414,15 +412,3 @@ href="http://sergerey.org" property="cc:attributionName"
 rel="cc:attributionURL">Serge Rey</a> is licensed under a <a
 rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```

@@ -16,7 +16,7 @@ jupyter:
 # Pandas
 
 This notebook presents an introduction to the `pandas` package.
-We focus on only the most commonly used features of `pandas` as they pertain to geospatial data analysis. More extensive references are given at the end of the notebook
+We focus on only the most commonly used features of `pandas` as they pertain to geospatial data analysis. More extensive references are given at the end of the notebook.
 
 ```python
 import pandas
@@ -172,6 +172,25 @@ df.head()
 
 ```python
 df[df.poverty_x > df.poverty_ward]
+```
+
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+Which ward has the highest poverty rate?
+</div>
+
+```python
+# %load solutions/120_1.py
+```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+Which tract the highest poverty rate as a percentage of its ward's poverty rate?
+</div>
+
+```python
+# %load solutions/120_2.py
 ```
 
 ## Dealing with *real data*
@@ -353,4 +372,34 @@ for y, max_id in enumerate(max_ids):
     pci = pc_inc.loc[max_id, str(year)]
     print(year, pci, name)
     
+```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+Identify the area with the lowest per-capita income each year.
+</div>
+
+```python
+min_ids = pc_inc.iloc[:, 8:].idxmin() 
+for y, min_id in enumerate(min_ids):
+    year = y + 1969
+    name = pc_inc.loc[min_id].GeoName
+    pci = pc_inc.loc[min_id, str(year)]
+    print(year, pci, name)
+```
+
+<div class="alert alert-success" style="font-size:120%">
+<b>Exercise</b>: <br>
+    As a percentage of the minimum per-captia income, calculate the relative income gap between the extremes of the income distribution each year.
+    
+   Identify the year with the maximum relative income gap.
+   
+</div>
+
+```python
+# %load solutions/120_3.py
+```
+
+```python
+
 ```

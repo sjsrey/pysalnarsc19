@@ -15,8 +15,6 @@ jupyter:
 
 # Introduction to Shapley
 
-[Serge Rey](http://sergerey.org)
-
 We begin our series on geospatial data analysis with a look at the
 library [Shapely](https://shapely.readthedocs.io/en/latest/). Shapely
 supports the creation, manipulation, and analysis of planar geometric
