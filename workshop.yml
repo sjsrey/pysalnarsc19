@@ -8,17 +8,19 @@ dependencies:
   - python=3.6
   - pip
   - bokeh
-  - cartopy
   - dask
+  - descartes
   - geopandas
   - ipython
   - ipywidgets
   - jupyter
+  - jupytext
   - mplleaflet
   - jupyterlab
   - nbconvert
   - networkx
   - palettable
+  - pysal
   - qgrid
   - rasterio
   - scikit-learn
@@ -29,9 +31,11 @@ dependencies:
   - pip:
         - folium
         - geojson
+        - contextily
         - palettable
         - libpysal
         - esda
         - mapclassify
         - giddy
+        - splot
         - datashader

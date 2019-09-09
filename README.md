@@ -6,36 +6,36 @@
 
 ---
 
-This repository contains the materials and instructions for the PySAL workshop at [GeComputation 2019](https://www.otago.ac.nz/geocomputation/call-for-papers/index.html).
+This repository contains the materials and instructions for the PySAL workshop
+at [GeoComputation
+2019](https://www.otago.ac.nz/geocomputation/call-for-papers/index.html).
 
 
 ## Schedule
 
 
-* 8:00-10:00
+* 9:00-10:40
   * Overview of PySAL and workshop
   * Introductions
   * Setup
   * Jupyter notebooks
   * Python primer
-* 10:00-10:30
+* 10:40-11:15
   * Coffee Break
-* 10:30-12:30
+* 11:15-13:00
   * Spatial data processing
   * Choropleth mapping and geovisualization
-  * Spatial weights
-* 12:30-1:30
+* 13:00-14:00
   * Lunch
-* 1:30-3:00
+* 14:00-15:45
+  * Spatial weights
   * Global spatial autocorrelation
   * Local spatial autocorrelation
-  * Spatial inequality analysis
-* 3:00-3:30
+* 15:45-16:15
   * Coffee Break  
-* 3:30-5:00
-  * Geodemographics and regionalization
-  * Spatial dynamics
-  * Spatial regression
+* 16:15-17:30
+  * Spatial inequality dynamics
+  * Regionalization and clustering
   
 ## Setup
 
