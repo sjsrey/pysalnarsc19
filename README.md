@@ -5,6 +5,7 @@
 - [Sergio Rey](http://sergerey.org) - Center for Geospatial Sciences, University of California, Riverside
 
 ---
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sjsrey/pysalworkshop/master)
 
 This repository contains the materials and instructions for the PySAL workshop
 at [GeoComputation
