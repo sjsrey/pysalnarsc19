@@ -17,9 +17,11 @@ dependencies:
   - jupyter
   - mplleaflet
   - jupyterlab
+  - jupytext
   - nbconvert
   - networkx
   - palettable
+  - pysal
   - qgrid
   - rasterio
   - scikit-learn
