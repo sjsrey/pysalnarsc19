@@ -31,10 +31,12 @@ dependencies:
   - xlsxwriter
   - pip:
         - folium
+        - contextily
         - geojson
         - palettable
         - libpysal
         - esda
         - mapclassify
         - giddy
+        - region
         - datashader
