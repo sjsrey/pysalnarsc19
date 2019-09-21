@@ -60,7 +60,8 @@ The steps to install this (given you meet the requirements above) include:
 
 Then, type on the terminal the following command and hit Enter:
 
-```docker pull sjsrey/pysalworkshop:v1
+```
+docker pull sjsrey/pysalworkshop:v1
 ```
 
 This will take a while to download but, once finished, you will be all ready to go.
