@@ -1,15 +1,17 @@
-# Spatial Data Science with PySAL @GeoComputation19
+# Spatial Data Science with PySAL @NARSC
 
 ### Instructor
 
 - [Sergio Rey](http://sergerey.org) - Center for Geospatial Sciences, University of California, Riverside
+- [Wei Kang](https://twitter.com/weikang9009) - Center for Geospatial Sciences, University of California, Riverside
+ 
 
 ---
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sjsrey/pysalworkshop/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sjsrey/pysalworkshop/2019-narsc)
 
 This repository contains the materials and instructions for the PySAL workshop
 at [GeoComputation
-2019](https://www.otago.ac.nz/geocomputation/call-for-papers/index.html).
+2019](http://www.narsc.org/newsite/wp-content/uploads/2019/06/pysal.pdf).
 
 
 ## Schedule
