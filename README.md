@@ -1,4 +1,7 @@
-# Spatial Data Science with PySAL @NARSC
+# Spatial Data Science with PySAL @NARSC19
+[![DOI](https://zenodo.org/badge/220668732.svg)](https://zenodo.org/badge/latestdoi/220668732)
+
+
 
 ### Instructors
 
@@ -40,3 +43,4 @@ Wednesday, Nov 13, 2019
 * 15:15-17:00
   * Spatial inequality dynamics
   * Regionalization and clustering
+
