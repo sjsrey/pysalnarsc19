@@ -11,7 +11,7 @@ There are three possible ways to interact with the workshop materials, depending
 The first two options will install packages on your laptop (they vary in how they do this) while the third option does not install any files locally - instead you only need a browser to interact with the materials remotely.
 
 
-If you choose either of the first two options, you will first need to download the workshop materials.
+*If you choose either of the first two options, you will first need to download the workshop materials.*
 
   
 ## Obtaining Workshop Materials
@@ -19,19 +19,19 @@ If you choose either of the first two options, you will first need to download t
 If you are familiar with GitHub, you should clone or fork this GitHub repository to a specific directory. Cloning can be done by:
 
 ```bash
-git clone https://github.com/sjsrey/pysalworkshop.git
+git clone https://github.com/sjsrey/pysalnarsc19.git
 ```
 
-If you are not using git, you can grab the workshop materials as a zip file by pointing your browser to (https://github.com/sjsrey/pysalworkshop.git) and then:
+If you are not using git, you can grab the workshop materials as a zip file by pointing your browser to (https://github.com/sjsrey/pysalnarsc19.git) and then:
 
 1. Click on the green *Clone or download* button in the upper right
 2. Select the `Download Zip` link
 
-![download](https://i.imgur.com/BeiBZmB.png)
+![download](https://i.imgur.com/6J1NeEu.png)
 
-This will download the file `pysalworkshop-master.zip` to your downloads directory.  
+This will download the file `pysalnarsc19-master.zip` to your downloads directory.  
 
-Once you have downloaded the zip file, extract the archive to a working directory of your choosing. The archive will expand into the directory `pysalworkshop-master`.  
+Once you have downloaded the zip file, extract the archive to a working directory of your choosing. The archive will expand into the directory `pysalnarsc19-master`.  
 
 Remember the location of this directory as you will need it for installation options under Docker or conda.
 
@@ -70,7 +70,7 @@ Once the command above has finished installing your  stack, you are ready to go!
 
 To get a Jupyter session started, you can follow these steps:
 
-1. Change into the directory where you extracted the pysalworkshop materials 
+1. Change into the directory where you extracted the pysalnarsc19 materials 
 1. Run on the same terminal as above the following command:
 
 ```
@@ -129,18 +129,18 @@ Having read the [Ananconda prompt](https://docs.anaconda.com/anaconda/user-guide
 *Obtaining Workshop Materials* section above.
 
 For example, if you are on Windows and your user name is `MyName`, and you extracted the archive to:
-`C:\Users\MyName\Downloads\pysalworkshop-master` 
+`C:\Users\MyName\Downloads\pysalnarsc19-master` 
 
 then at the Anaconda prompt you would get there with:
 
 ```bash
-cd C:\Users\MyName\Downloads\pysalworkshop-master
+cd C:\Users\MyName\Downloads\pysalnarsc19-master
 ```
 
 Were you instead on macOS you would do:
 
 ```bash
-cd /Users/MyName/Downloads/pysalworkshop-master
+cd /Users/MyName/Downloads/pysalnarsc19-master
 ```
 
 Once there, create the workshop environment with:
@@ -192,7 +192,7 @@ If you do see the above, you are ready for the tutorial. If not, please contact 
 
 Finally, if you do not wish to, or are unable to, install the packages and software using either of the first two options, you can interact with the workshop materials using a Binder instance. Basically, this is a custom Linux environment running on a remote server that has all the packages and materials installed. To access it, point your web browser to:
 
-https://mybinder.org/v2/gh/sjsrey/pysalworkshop/master
+https://mybinder.org/v2/gh/sjsrey/pysalnarsc19/master
 
 This will start-up an instance of the workshop environment. After a few minutes you will see the jupyter notebook listing of the materials. Select the `contents` folder to access the notebooks.
 

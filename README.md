@@ -7,7 +7,7 @@
  
 
 ---
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sjsrey/pysalnarsc19)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sjsrey/pysalnarsc19/master)
 
 This repository contains the materials and instructions for the PySAL workshop
 at [NARSC 2019](http://www.narsc.org/newsite/wp-content/uploads/2019/06/pysal.pdf).
