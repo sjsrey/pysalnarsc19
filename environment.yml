@@ -37,5 +37,6 @@ dependencies:
         - libpysal
         - esda
         - mapclassify
+        - giddy
         - region
         - datashader
