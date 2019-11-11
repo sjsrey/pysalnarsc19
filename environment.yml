@@ -1,4 +1,4 @@
-# Run `conda-env create -f pysalworkshop.yml`
+# Run `conda-env create -f environment.yml`
 name: pysalworkshop
 channels:
   - conda-forge

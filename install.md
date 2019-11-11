@@ -74,7 +74,7 @@ To get a Jupyter session started, you can follow these steps:
 1. Run on the same terminal as above the following command:
 
 ```
-docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work sjsrey/pysalworkshop:v1
+docker run --rm -ti -p 8888:8888 -v ${pwd}:/home/jovyan/work sjsrey/pysalworkshop:v1
 ```
 
 This will start the docker container and you should see something like the
