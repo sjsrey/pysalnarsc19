@@ -6,7 +6,9 @@ This tutorial makes use of a variety of data sources. Below is a brief descripti
 
 This includes Texas counties from the Census Bureau and a list of attached
 socio-economic variables. This is an extract of the national cover dataset
-`NAT` that is part of the example datasets shipped with `PySAL`.
+`natregimes` that is part of the example datasets with `PySAL`
+and hosted at the Center for Spatial Data Science at the University of Chicago.
+The metadata can be found [here](https://geodacenter.github.io/data-and-lab/natregimes/).
 
 ## AirBnb listing for Austin (TX)
 
